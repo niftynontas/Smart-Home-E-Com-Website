@@ -12,11 +12,28 @@
     box-shadow: 0 5px 15px rgb(0,0,0,06);
 }
 
-body{
-    font-family: 'Poppins',sans-serif;
-
+.header a {
+    text-decoration: none;
+    color: rgb(10, 44, 73);
 }
 
+.header .fa-shopping-cart {
+    font-size: 20px;
+}
+
+#cart-count {
+    font-weight: bold;
+    color: #34258a;
+}
+
+#cart-total {
+    font-weight: bold;
+    color: #34258a;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
 
 .navbar{
     display: flex;
@@ -74,18 +91,6 @@ p{
     margin:25px 0;
 
 }
-.btn{
-    display: inline-block;
-    background: #34258a;
-    color:#ffffff;
-    padding: 12px 40 px;
-    margin: 50 px 0;
-    border-radius: 40px;
-    transition: background 0.5;
-}
-.btn:hover{
-    background:#7db1db;
-}
 
 .header .row{
     margin-top: 70px
@@ -119,6 +124,7 @@ p{
     align-items: center;
     flex-wrap: wrap;
   }
+
   footer {
     font-size: 13px;
     margin-bottom: 10px;
@@ -127,25 +133,72 @@ p{
     box-shadow: 0 5px 15px rgb(0,0,0,06);
     background: radial-gradient(#ffffff,#5180a7);
     padding:20px 80px;
-    min-width: 1300px;
+    width: 100%;
   }
 
 .product1{
 text-align: center;
-
-
   }
+
   .Product1 .pro{
     width: 30%;
     min-width: 250px;
     padding: 10px 12px ;
     border: 1px solid #cce7d0;
   }
+
   #product1 .pro img{
     width: 100%;
     border-radius: 20px;
   }
+
 img{
     width: 100px;
     height: 100px;
+}
+
+.col{
+    text-align: center;
+}
+
+.product-container {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allows products to wrap to the next line if needed */
+    justify-content: space-between; /* Distributes space between items */
+    gap: 20px; /* Adds spacing between products */
+    max-width: 1300px; /* Ensures it doesn't exceed the container width */
+    margin: auto; /* Centers the container */
+    padding: 20px; /* Adds padding inside the container */
+}
+
+.product {
+    flex: 1 1 calc(33.333% - 20px); /* Adjusts the width of each product */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds shadow to products */
+    border-radius: 8px; /* Rounds corners */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    text-align: center; /* Centers text */
+    padding: 10px; /* Adds padding inside each product */
+    background: #fff; /* Sets background color */
+}
+
+.product img {
+    width: 300px; /* Ensures images fill the container */
+    height: 250px; /* Maintains aspect ratio */
+}
+
+/* Style for the Add to Cart Button */
+.btn-cart {
+    display: inline-block;
+    background: #34258a;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.btn-cart:hover {
+    background: #7db1db;
 }
