@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #a881db;
+    box-shadow: 0 5px 15px rgb(0,0,0,06);
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display:inline-block;
+    margin-right: 20px;
+    
+}
+a{
+   text-decoration: none; 
+   color: rgb(10, 44, 73);
+
+}
+p{
+    color: rgb(10, 44, 73);
+}
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding: left 25px;
+    padding-right: 25px;
+   
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h2 {
+    font: size 50px;
+    line-height: 60px;
+    margin:25px 0;
+
+}
+.btn{
+    display: inline-block;
+    background: #34258a;
+    color:#ffffff;
+    padding: 12px 40 px;
+    margin: 50 px 0;
+    border-radius: 40px;
+    transition: background 0.5;
+}
+.btn:hover{
+    background:#7db1db;
+}
+.header{
+    background: radial-gradient(#ffffff,#5180a7);
+
+
+}
+.header .row{
+    margin-top: 70px
+
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 70%;
+}
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding: left 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.small-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer.col {
+    background: #a881db;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+  }
+
+.product1{
+text-align: center;
+
+
+  }
+  .Product1 .pro{
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 12px ;
+    border: 1px solid #cce7d0;
+  }
+  #product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+  }
