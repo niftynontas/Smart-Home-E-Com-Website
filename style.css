@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #a881db;
+    background: radial-gradient(#ffffff,#5180a7);
     box-shadow: 0 5px 15px rgb(0,0,0,06);
 }
 
@@ -22,7 +22,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
-    
+    flex-direction: row;
 }
 nav{
     flex:1;
@@ -63,10 +63,11 @@ p{
     flex-basis: 50%;
     min-width: 300px;
 }
-.col-2 img{
-    max-width: 100%;
-    padding: 50px 0;
+#smart-home{
+    width: 500px;
+    height: 200px;
 }
+
 .col-2 h2 {
     font: size 50px;
     line-height: 60px;
@@ -85,11 +86,7 @@ p{
 .btn:hover{
     background:#7db1db;
 }
-.header{
-    background: radial-gradient(#ffffff,#5180a7);
 
-
-}
 .header .row{
     margin-top: 70px
 
@@ -122,12 +119,15 @@ p{
     align-items: center;
     flex-wrap: wrap;
   }
-  footer.col {
-    background: #a881db;
+  footer {
     font-size: 13px;
     margin-bottom: 10px;
     text-decoration: none;
-
+    background: #a881db;
+    box-shadow: 0 5px 15px rgb(0,0,0,06);
+    background: radial-gradient(#ffffff,#5180a7);
+    padding:20px 80px;
+    min-width: 1300px;
   }
 
 .product1{
@@ -145,3 +145,7 @@ text-align: center;
     width: 100%;
     border-radius: 20px;
   }
+img{
+    width: 100px;
+    height: 100px;
+}
